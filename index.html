@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Работа в Польше — Оставьте заявку</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background: #0057b8;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, button {
+      padding: 14px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    input {
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #0057b8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #003f87;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Работа в Польше</h1>
+  <p>Оставьте заявку и мы свяжемся с вами для трудоустройства</p>
+</header>
+
+<div class="container">
+  <form action="https://formsubmit.co/your-email@example.com" method="POST">
+    <input type="text" name="full_name" placeholder="Ваше ФИО" required />
+    <input type="tel" name="phone" placeholder="Ваш номер телефона" required />
+    
+    <!-- Настройки FormSubmit -->
+    <input type="hidden" name="_subject" value="Новая заявка на работу в Польше">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Оставить заявку</button>
+  </form>
+
+  <div class="info">
+    Мы помогаем найти официальную работу в Польше быстро и надежно.
+  </div>
+</div>
+
+<footer>
+  © 2026 Работа в Польше. Все права защищены. Kirill test версия.
+</footer>
+
+</body>
+</html>
