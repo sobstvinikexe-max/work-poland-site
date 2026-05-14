@@ -1,95 +1,94 @@
-/* Базові налаштування */
-body {
-    font-family: Arial, sans-serif;
+/* Сброс стандартных отступов браузера */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Шапка */
 .gov-header {
-    background-color: #fff;
-    border-bottom: 4px solid #dc2c2c; /* Червона лінія */
-    padding: 15px 0;
+    background: #fff;
+    border-bottom: 5px solid #d42a30; /* Та самая красная полоса */
+    padding: 20px 0;
 }
 
 .gov-brand {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
-.logo {
-    height: 50px;
-}
-
-.brand-text strong {
-    display: block;
-    font-size: 1.2rem;
-}
-
-/* Навігація */
 .gov-nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 20px;
-    padding: 0;
 }
 
 .gov-nav a {
     text-decoration: none;
-    color: #000;
+    color: #0056a0;
     font-weight: bold;
 }
 
-/* Hero Section */
+/* Синий блок (Hero) */
 .hero {
-    background-color: #003366; /* Синій колір */
+    background-color: #003366;
     color: white;
-    padding: 60px 0;
+    padding: 50px 0;
+    margin-bottom: 40px;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
-/* Сетка карточок */
+/* Карточки контента */
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: -30px; /* Наїзд на банер */
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #003366;
 }
 
 .btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #003366;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
+    color: #0056a0;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Футер */
 .gov-footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 0;
-    margin-top: 50px;
+    background: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
 }
