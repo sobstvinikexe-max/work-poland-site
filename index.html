@@ -1,51 +1,78 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gov Clone</title>
+  <title>PortalGov</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="container">
-    <div class="logo">gov.pl</div>
-    <nav>
-      <a href="#">Usługi</a>
-      <a href="#">Informacje</a>
-      <a href="#">Kontakt</a>
+<header class="header">
+  <div class="wrapper">
+    <div class="brand">PortalGov</div>
+    <nav class="menu">
+      <a href="#">Start</a>
+      <a href="#">E-Usługi</a>
+      <a href="#">Aktualności</a>
+      <a href="#">Pomoc</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <h1>Witamy na portalu usług publicznych</h1>
-    <p>Znajdź najważniejsze informacje i usługi online.</p>
-    <input type="text" placeholder="Szukaj usług...">
+<section class="banner">
+  <div class="wrapper">
+    <h1>Cyfrowe usługi dla obywateli</h1>
+    <p>Wszystkie najważniejsze sprawy urzędowe online.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Wyszukaj usługę lub informację">
+      <button>Szukaj</button>
+    </div>
   </div>
 </section>
 
-<section class="services container">
-  <div class="card">
-    <h3>Dowód osobisty</h3>
-    <p>Złóż wniosek online.</p>
-  </div>
-  <div class="card">
-    <h3>Prawo jazdy</h3>
-    <p>Sprawdź status dokumentu.</p>
-  </div>
-  <div class="card">
-    <h3>Podatki</h3>
-    <p>Rozlicz PIT online.</p>
+<section class="quick-links">
+  <div class="wrapper cards">
+
+    <article class="service-card">
+      <h3>Dokumenty</h3>
+      <p>Dowód osobisty, paszport, meldunek.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Transport</h3>
+      <p>Prawo jazdy, rejestracja pojazdu.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Finanse</h3>
+      <p>Podatki, składki, rozliczenia.</p>
+    </article>
+
+    <article class="service-card">
+      <h3>Zdrowie</h3>
+      <p>Ubezpieczenie, recepty, wizyty.</p>
+    </article>
+
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <p>© 2026 Gov Clone</p>
+<section class="info-section">
+  <div class="wrapper">
+    <h2>Najczęściej używane usługi</h2>
+    <ul>
+      <li>Złóż wniosek o dowód osobisty</li>
+      <li>Sprawdź punkty karne</li>
+      <li>Rozlicz podatek online</li>
+      <li>Uzyskaj zaświadczenie urzędowe</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrapper">
+    <p>© 2026 PortalGov | Projekt demonstracyjny</p>
   </div>
 </footer>
 
