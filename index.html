@@ -1,152 +1,52 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Работа в Польше</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      color: #333;
-    }
-
-    header {
-      background: white;
-      text-align: center;
-      padding: 25px 15px;
-      border-bottom: 4px solid #d6001c;
-    }
-
-    header img {
-      width: 90px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 26px;
-    }
-
-    header p {
-      margin: 0;
-      color: #555;
-    }
-
-    .bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.05;
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg");
-      background-size: cover;
-      z-index: -1;
-    }
-
-    .container {
-      max-width: 650px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      border-top: 5px solid #d6001c;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input {
-      padding: 14px;
-      margin-bottom: 12px;
-      font-size: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    input:focus {
-      border-color: #d6001c;
-      outline: none;
-    }
-
-    button {
-      padding: 14px;
-      background: #d6001c;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background: #a80016;
-    }
-
-    .info {
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-      margin-top: 15px;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 13px;
-      color: #777;
-      padding: 20px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gov Clone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="bg"></div>
-
-<header>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Coat_of_arms_of_Poland-official.svg" 
-       alt="Герб Польши"
-       onerror="this.style.display='none'">
-  <h1>Работа в Польше</h1>
-  <p>Официальное трудоустройство через рекрутера</p>
+<header class="topbar">
+  <div class="container">
+    <div class="logo">gov.pl</div>
+    <nav>
+      <a href="#">Usługi</a>
+      <a href="#">Informacje</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </div>
 </header>
 
-<div class="container">
-
-  <form action="https://formsubmit.co/work.team.skam@gmail.com" method="POST" enctype="multipart/form-data">
-
-    <input type="text" name="full_name" placeholder="ФИО" required />
-
-    <input type="tel" name="phone" placeholder="Номер телефона" required />
-
-    <input type="text" name="pesel" placeholder="PESEL" required />
-
-    <input type="text" name="passport" placeholder="Номер паспорта" required />
-
-    <input type="file" name="document" accept="image/*,.pdf" required />
-
-    <input type="hidden" name="_subject" value="Новая заявка — Работа в Польше">
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit">Отправить заявку</button>
-  </form>
-
-  <div class="info">
-    Мы подбираем официальную работу в Польше. Ответ в течение 24 часов.
+<section class="hero">
+  <div class="container">
+    <h1>Witamy na portalu usług publicznych</h1>
+    <p>Znajdź najważniejsze informacje i usługi online.</p>
+    <input type="text" placeholder="Szukaj usług...">
   </div>
+</section>
 
-</div>
+<section class="services container">
+  <div class="card">
+    <h3>Dowód osobisty</h3>
+    <p>Złóż wniosek online.</p>
+  </div>
+  <div class="card">
+    <h3>Prawo jazdy</h3>
+    <p>Sprawdź status dokumentu.</p>
+  </div>
+  <div class="card">
+    <h3>Podatki</h3>
+    <p>Rozlicz PIT online.</p>
+  </div>
+</section>
 
 <footer>
-  © 2026  Польша (ытест версия)
+  <div class="container">
+    <p>© 2026 Gov Clone</p>
+  </div>
 </footer>
 
 </body>
